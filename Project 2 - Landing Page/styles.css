@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: #1F2937;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav {
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    flex: 1 1 10%;
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+nav ul li:first-of-type {
+    flex: 1 0 33%;
+    margin-left: 10%;
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+nav ul li:last-of-type{
+    margin-right: 10%;
+}
+
+.one h1 {
+    font-weight: 800;
+    font-size: 48px;
+    color: #F9FAF8;
+}
