@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <script>
+        function computerPlay() {
+            // Setting the minimum and maximum range of #s
+            // that can be generated
+            let min = 1;
+            let max = 4;
+            function getRandomInt(min, max) {
+                min = Math.ceil(min);
+                max = Math.floor(max);
+                let option = Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
+                return option;
+            }
+
+            let option = getRandomInt(min, max);
+
+            if (option === 1) {
+                let computerHand = "rock";
+                return computerHand;
+            }
+            else if (option === 2) {
+                let computerHand = "paper";
+                return computerHand;
+            }
+            else {
+                let computerHand = "scissors";
+                return computerHand;
+            }
+        };
+
+
+        // This arrow function will take the users input, and prompts them for playerInput. 
+        // Then we create an array on the spot, and we make an if statement saying if
+        // this array contains lower case playerInput, return it, else it will keep running after
+        // giving an error message
+        const playerSelection = () => {
+            while (true) {
+                let playerInput = prompt("What hand would you like to play this round?");
+                if (['rock', 'paper', 'scissors'].includes(playerInput.toLowerCase())) {
+                    playerInput = playerInput.toLowerCase();
+                    return playerInput;
+                }
+                else {
+                    alert("Please input a valid hand : Rock, Paper, Scissors")
+                }
+            }
+        };
+
+        function RPS(computerHand , playerHand) {
+            // Making the results messages
+            let win = (h1, h2) => alert(`You won, the computer played ${h1}, and you played ${h2}!`);
+            let lose = (h1, h2) => alert(`You lost, the computer played ${h1}, and you played ${h2}!`);
+            let draw = () => alert(`No winner, you both played the same hand!`);
+
+            const winMap = {
+                rock: 'scissors',
+                scissors: 'paper',
+                paper: 'rock'
+            }
+
+            function pain (computerHand, playerHand) {
+                if (playerHand === computerHand) {
+                    return draw();
+                }
+              // draws are covered, now we check if player1 beats player 2
+                const beats = winMap[playerHand];
+
+                console.log(typeof beats);
+
+                if(beats == computerHand) {
+                    return win(computerHand, playerHand);
+                }
+
+                else {
+                return lose(computerHand, playerHand);
+                }
+            }
+            pain(computerHand, playerHand);
+        }
+
+        let cpu = computerPlay();
+        let player = playerSelection();
+        result = RPS(cpu, player);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

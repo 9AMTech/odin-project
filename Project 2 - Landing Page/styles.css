@@ -2,9 +2,13 @@
     margin: 0;
     padding: 0;
     border: 0;
-    background: #1F2937;
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+html{
+    background: #1F2937;
 }
 
 nav {
@@ -33,8 +37,77 @@ nav ul li:last-of-type{
     margin-right: 10%;
 }
 
+.one {
+    display: flex;
+    padding: 150px 240px;
+}
+
+.one section {
+    flex: 1 0 0
+}
+
+.one section:last-of-type {
+    display: flex;
+    justify-items: center;
+    width: 100%;
+}
+
+.one section:last-of-type p {
+    background: #4d4d4d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
 .one h1 {
     font-weight: 800;
     font-size: 48px;
     color: #F9FAF8;
+}
+
+.one p {
+    color: #e5e7eb;
+    font-size: 18px;
+    padding: 3% 0;
+}
+
+.one button {
+    padding: 12px 33px;
+    border: solid 1px #3882f6;
+    border-radius: 10%;
+    background-color: #3882f6;
+}
+
+.two {
+    background-color: white;
+    height: 250px;
+}
+
+.two section:first-of-type  {
+    display: flex;
+}
+
+.two section:first-of-type h2 {
+    justify-content: center;
+}
+
+.two section:not(:first-of-type) {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0 26px;
+    justify-content: space-evenly;
+    gap: 10px;
+    width: 20%;
+}
+
+.two h2 {
+    color: #1F2937;
+    font-weight: 800;
+    font-size: 36px;
+}
+
+.two h4 {
+    color: #8c8c95;
 }
