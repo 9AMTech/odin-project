@@ -10,39 +10,38 @@ let library = [];
 let currentID = 0;
 
 
-function Book(id, name, author, pages, status, rating) {
-    this.id = id
-    this.name = name
-    this.author = author
-    this.pages = pages
-    this.status = status
-    this.rating = rating
-}
+class Book {
 
-
-// testing to see how branches work
-
-
-Book.prototype.change_status = (status) => {
-    switch (status) {
-        case 'Read':
-            return 'Unread';
-            break;
-        case 'Unread':
-            return 'Read';
-            break;
-        case 'No Response':
-            return 'Read'
-            break;
+    constructor(id, name, author, pages, status, rating) {
+        this.id = id
+        this.name = name
+        this.author = author
+        this.pages = pages
+        this.status = status
+        this.rating = rating
     }
-}
 
-Book.prototype.change_rating = (rating) => {
-    if (rating === 5) {
-        return rating = 1;
+    change_status = (status) => {
+        switch (status) {
+            case 'Read':
+                return 'Unread';
+                break;
+            case 'Unread':
+                return 'Read';
+                break;
+            case 'No Response':
+                return 'Read'
+                break;
+        }
     }
-    else {
-        return rating + 1;
+
+    change_rating = (rating) => {
+        if (rating === 5) {
+            return rating = 1;
+        }
+        else {
+            return rating + 1;
+        }
     }
 }
 
