@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" async defer></script>
+    <title>Library</title>
+</head>
+
+<body>
+    <main>
+        <section class="main-wrapper">
+            <section class="center-align books-header">
+                <section class="title">
+                    <h1>Library</h1>
+                </section>
+                <section class="center-align toolbar">
+                    <h2>Toolbar</h2>
+                    <button class="add-books">ADD BOOK</button>
+                </section>
+                <!-- Add hide as a class name here when you want to hide the section by default -->
+                <section class="add-form-section hide">
+                    <form id="add-form">
+                        <label for="title">Name</label>
+                        <br>
+                        <input type="text" class="title" name="title" placeholder="Jane">
+                        <br>
+                        <label for="author">Author</label>
+                        <br>
+                        <input type="text" class="author" name="author" placeholder="Doe">
+                        <br>
+                        <label for="pages">Pages</label>
+                        <br>
+                        <input type="number" class="pages" name="pages" placeholder="52" min="1">
+                        <br> 
+                        <p>Status</p>
+                        <input type="radio" class="rating" name="status" value="Read">
+                        <label for="rating">Read</label>
+                        <input type="radio" class="rating" name="status" value="Unread">
+                        <label for="rating">Unread</label>
+                        <p>Rating</p>
+                        <section class="rating-grid">
+                            <section class="labels">
+                                <section><label for="rating">1</label></section>
+                                <section><label for="rating">2</label></section>
+                                <section><label for="rating">3</label></section>
+                                <section><label for="rating">4</label></section>
+                                <section><label for="rating">5</label></section>
+                            </section>
+                            <section class="radio-buttons">
+                                <section><input type="radio" class="rating" name="rating" value="1"></section>
+                                <section><input type="radio" class="rating" name="rating" value="2"></section>
+                                <section><input type="radio" class="rating" name="rating" value="3"></section>
+                                <section><input type="radio" class="rating" name="rating" value="4"></section>
+                                <section><input type="radio" class="rating" name="rating" value="5"></section>
+                            </section>
+                        </section>
+                        <button type="submit" class="submit">SUBMIT</button>
+                    </form>
+                </section>
+            </section>
+            <section class="books">
+            </section>
+        </section>
+    </main>
+</body>
+
+</html>

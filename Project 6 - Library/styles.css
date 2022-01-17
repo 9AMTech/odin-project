@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body {
+    padding-bottom: 16%;
+}
+
+main {
+    display: flex;
+    position: relative;
+    /* left: 50%;
+    transform: translate(0, -50); */
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+button {
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(70,253,45,1) 100%);
+    border: solid 1px grey;
+    margin: 3px;
+    padding: 10px;
+    font-weight: 700;
+}
+
+input {
+    border: solid 1px black;
+    margin: 2px 0;
+    padding: 1px 5px;
+}
+
+label {
+    margin: 0 2.5px;
+    align-items: center;
+}
+
+form p {
+    margin: 8px 0 3px;
+}
+
+.center-align {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-wrapper {
+    margin: 5% auto 0;
+}
+
+.delete {
+    background: rgb(195,125,34);
+    background: linear-gradient(0deg, rgba(195,125,34,1) 0%, rgba(253,45,45,1) 54%);
+}
+
+.books {
+    /* border: solid 1px black; */
+    padding: 5% 0;
+    margin: auto;
+    display: grid;
+    min-width: 950px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10%;
+}
+
+.books-header {
+    border: solid 1px black;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.book {
+    border: solid 1px black;
+    padding: 10px;
+}
+
+
+.book h4 {
+    margin-bottom: 8px;
+}
+
+.toolbar h2 {
+    margin: 3px;
+}
+
+.change-status {
+    margin-top: 15px;
+}
+
+#add-form {
+    text-align: center;
+
+}
+
+.add-form-section {
+    margin-top: 15px;
+}
+
+.hide {
+    display: none;
+    opacity: 0;
+}
+
+.rating-grid {
+    display: grid;
+    margin-bottom: 7px;
+}
+
+.labels section {
+    display: inline;
+}
+
+.radio-buttons section {
+    display: inline;
+}
+
+#the-man {
+    -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+}
+
+/* .rating {
+    float: left;
+    padding: 0 1em;
+    text-align: center;
+} */

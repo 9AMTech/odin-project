@@ -1,0 +1,24 @@
+General Tasks
+
+- Make a pop up window for a form | DONE
+  - Form allows user to input data to add a new book to the library | Partially done
+    - Data has title, author, pages, read status, and rating
+  - When a book is added it goes along a row, with 6 books per shelf, going past creates a new shelf | Partially DONE
+  - Create a button that allows the user to switch rating | Partially Done
+  - Create a button that allows the user to switch the read status | Partially Done
+  - Create a button to remove the book (data attribute connecting the remove button to the book in the array)
+  - Instead of the rating, put last location of the book | Maybe in a later implementation
+
+CSS Tasks
+
+- When a book gets added it gets added to the center of the shelf, the shelf keeps center while new objects are added | Partially Done, went with the route of putting them in a grid
+- Each book that gets added will get a layer of white background on a random colored book made through CSS
+
+JS Tasks
+
+- Create a book object that stores all the relevant info | DONE
+- Update the DOM to display the new book | DONE
+- Pull data from HTML form and store into a new book, then throw it into array Library
+  - add on click listener to addform button
+  - reset the values in the form on button press
+  -

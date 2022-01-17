@@ -1,0 +1,6 @@
+Find out how to get the grid to be x by x size, for some reason its not ever working
+
+Find out why the squares always turn into rectangles and fill the bottom of the screen up
+
+Find out how to do the optional challenge, to make the squares progressively darker up to 10x until it turns black
+    -I started this with HEX values, i hit a road block and decided to move forward with HSL values

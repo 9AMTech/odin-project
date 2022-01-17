@@ -1,0 +1,8 @@
+players
+    -Set the factories to either be automatic or player input
+    
+gameBoard
+    -
+
+gameLogic
+    -z
