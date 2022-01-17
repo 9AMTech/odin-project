@@ -19,6 +19,10 @@ function Book(id, name, author, pages, status, rating) {
     this.rating = rating
 }
 
+
+// testing to see how branches work
+
+
 Book.prototype.change_status = (status) => {
     switch (status) {
         case 'Read':
